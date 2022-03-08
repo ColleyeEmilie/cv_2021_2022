@@ -16,7 +16,7 @@
         <nav class="nav__navigation">
             <ul class="nav__ul">
                 <li class="nav__loisirs">
-                    <a href="#" role="button" class="navi__li" alt="Mes loisirs">Mes loisirs</a>
+                    <a href="#" role="button" class="navi__li" >Mes loisirs</a>
                     <ul class="loisirs__ul">
                         <li class="loisirs__li premier_loisir">
                             <a href="#" class="loisir__a"><span class="loisir__title" >Lecture</span></a>
@@ -26,12 +26,12 @@
                         </li>
                     </ul>
                 </li>
-                <li class="recettes"><a href="#" role="button" class="nav__li" alt="recettes">Recettes</a></li>
-                <li class="histoire"><a href="#" role="button" class="navigation__li" alt="nos histoires de café">Nos histoires de café</a></li>
+                <li class="recettes"><a href="#" role="button" class="nav__li">Recettes</a></li>
+                <li class="histoire"><a href="#" role="button" class="navigation__li" >Nos histoires de café</a></li>
             </ul>
         </nav>
         <div class="nav__logo">
-            <a class="logo__a" href="#" alt="logo"></a>
+            <a class="logo__a" href="#" ></a>
         </div>
         <div class="nav__bouton">
             <button  class="contact__button">Contacter maintenant</button>
@@ -105,26 +105,42 @@
             </div>
 
         </section>
-        <div class="step__img"><img src="" alt=""></div>
-        <div class="step__txt">
-            <p class="step__step subheader">Etape 1</p>
-            <h3 class="step__title title">Langages</h3>
-            <p class="step__txt">HTML5, CSS3, JavaScript, PHP</p>
-            <a href="#" class="step__next">Prochaine étape</a>
-        </div>
-        <div class="step__img"><img src="" alt=""></div>
-        <div class="step__txt">
-            <p class="step__step subheader">Etape 2</p>
-            <h3 class="step__title title">Outils</h3>
-            <p class="step__txt">HTML5, CSS3, JavaScript, PHP</p>
-            <a href="#" class="step__next">Prochaine étape</a>
-        </div>
-        <div class="step__img"><img src="" alt=""></div>
-        <div class="step__txt">
-            <p class="step__step subheader">Etape 3</p>
-            <h3 class="step__title title">Langages</h3>
-            <p class="step__txt">HTML5, CSS3, JavaScript, PHP</p>
-            <a href="#" class="step__next">Prochaine étape</a>
+
+        <div class="step__container">
+            <div class="step__img">
+                <div class="img__container step1 active">
+                    <img src="./img/img1.jpg" alt="">
+                </div>
+                <div class="img__container step2 hide">
+                    <img src="./img/img2.jpg" alt="">
+                </div>
+                <div class="img__container step3 hide">
+                    <img src="./img/img3.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="blank-container hide-for-large"></div>
+
+            <div class="step__txt step1 active">
+                <p class="step__step subheader">Etape 1</p>
+                <h3 class="step__title title">Langages</h3>
+                <p class="step__txt">HTML5, CSS3, JavaScript, PHP</p>
+                <a href="#" class="step__next">Prochaine étape</a>
+            </div>
+
+            <div class="step__txt step2 hide">
+                <p class="step__step subheader">Etape 2</p>
+                <h3 class="step__title title">Outils</h3>
+                <p class="step__txt">HTML5, CSS3, JavaScript, PHP</p>
+                <a href="#" class="step__next">Prochaine étape</a>
+            </div>
+
+            <div class="step__txt step3 hide">
+                <p class="step__step subheader">Etape 3</p>
+                <h3 class="step__title title">Langages</h3>
+                <p class="step__txt">HTML5, CSS3, JavaScript, PHP</p>
+                <a href="#" class="step__next">Prochaine étape</a>
+            </div>
         </div>
 
         <section class="contact">
