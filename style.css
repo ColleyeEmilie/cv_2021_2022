@@ -1,0 +1,278 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* ------------- FIN RESET MAYER ------------*/
+
+@font-face {
+    font-family: "LanderGrandeRegular";
+    src: url("/fonts/Lander-Grande-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: "PikeBold";
+    src: url("/fonts/Pike-Bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "SoDoSansRegular";
+    src: url("/fonts/SoDo-Sans-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: "SoDoSansSemiBold";
+    src: url("/fonts/SoDo-Sans-SemiBold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "SoDoSansBold";
+    src: url("/fonts/SoDo-SansBold.woff2") format("woff2");
+}
+
+/* -------------- FIN FONTS -------------*/
+body{
+    box-sizing: border-box;
+    width: 100%;
+    font-family: SoDoSansRegular, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: .02em;
+    margin-right: -0.02rem;
+}
+.subheader, .year{
+    font-family: PikeBold, sans-serif;
+}
+.title{
+    font-family: LanderGrandeRegular, serif;
+}
+
+.background__green{
+    background-color: #1e3932;
+}
+
+.subheader__section{
+    /*max-width: 100%;*/
+    place-self: auto;
+    grid-area: auto/ auto/ auto/ auto;
+    z-index: auto;
+    float: none;
+    flex-shrink: 1;
+    display: block;
+    position: relative;
+    overflow: visible;
+    box-sizing: border-box;
+    width: 320px;
+    height: 874px;
+}
+
+.background__image{
+    background-image: url("./img/background.png");
+    background-size: auto 100%;
+    height: 35.25rem;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.subheader__title{
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: .25em;
+    width: 100%;
+}
+
+.subheader__name{
+    text-align: center;
+    margin: 0 1.875rem;
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 400;
+}
+
+.subheader__min{
+    position: absolute;
+    bottom: 1.25rem;
+    right: 1.875rem;
+    display: inline-block;
+    margin-left: auto;
+    width: auto;
+    background-position: 0 2px;
+    height: 1.875rem;
+    padding-left: 1.1875rem;
+    background-size: 14px 14px;
+}
+
+.background__neutral{
+    background-color: #f2f0eb;
+}
+
+.about__section{
+    display: block;
+    max-width: 100%;
+    padding: 5rem 1.875rem;
+    text-align: center;
+}
+
+.subheader__container{
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.about__content{
+    color: #1e3932;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: SoDoSansRegular, sans-serif;
+    font-weight: 200;
+    letter-spacing: .02em;
+}
+
+.about__title{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: .25em;
+    width: 100%;
+    margin-right: -37px;
+}
+
+.ingredients__content{
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem
+}
+.ingredients__image{
+    width: 100%;
+}
+.ingredients__image img{
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+.ingredients__title{
+    text-align: center;
+    letter-spacing: .1875rem;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.ingredients__list{
+    margin: 0.9375rem 0.625rem 2rem 3.5rem;
+    width: auto;
+}
+
+.bullets{
+    display: block;
+    position: absolute;
+    width: 0.375rem;
+    height: 0.375rem;
+    border: 0.125rem solid #00754a;
+    border-radius: 50%;
+    top: 0.5rem;
+    left: -0.9375rem;
+}
+.ingredients__item{
+    display: flex;
+}
+
+ul li .ingredients__quantity{
+    position: relative;
+    display: inline-flex;
+    flex-shrink: 0;
+    width: 3.75rem;
+}
+
+.ingredients__txt{
+    display: inline;
+}
+
+.nav__navigation a{
+    color: white;
+    font-size: 18px;
+}
+
+.ingredients__list, .subheader, .subheader__min, .subheader__name, .subheader__title, .contact__content, .footer__links li a{
+    color:white;
+}
+a{
+    text-decoration: none;
+}
+.active__language a{
+    text-decoration: underline;
+}
+.footer__p, .footer__links.legal a{
+    color: #9B9B9B;
+}
+.formation__section{
+    background-color: #9B9B9B;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.formation__decouvrir, .button__expro, .experience__subtitle, .about__title{
+    color: #006241;
+}
+
+.contact{
+    background-image: url("./img/Banner_green.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 100% 100vh;
+    height: 100vh;
+}
+ .contact__subtitle, .contact__title{
+     margin-bottom: 30px;
+     text-align: center;
+ }
+ .contact__button{
+     padding: 15px;
+     margin: 0 150px;
+ }
