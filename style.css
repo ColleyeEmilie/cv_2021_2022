@@ -221,7 +221,7 @@ ul li .ingredients__quantity{
 ---------------STEP--------------
 ---------------------------------
 */
-.step__container{
+.astep__container{
     width: 100%;
     position: relative;
     background: #f2f0eb;
@@ -230,7 +230,7 @@ ul li .ingredients__quantity{
     margin: 0 auto;
 }
 
-.step__img{
+.step{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -240,7 +240,7 @@ ul li .ingredients__quantity{
     position: relative;
 }
 
-.step__txt{
+.astep__txt{
     display: flex;
     flex-flow: row wrap;
 }
@@ -251,15 +251,12 @@ ul li .ingredients__quantity{
     width: 100%;
 }
 .img__container img{
-    max-width: 100%;
+   /* max-width: 100%; */
     height: auto;
     position: relative;
 }
-.img__container.active{
+.aimg__container.active{
     display: block!important;
-}
-.hide {
-    opacity: 0;
 }
 .blank-container {
     position: relative;
