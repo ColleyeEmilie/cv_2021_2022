@@ -13,28 +13,43 @@
 </head>
 <body>
     <header>
-        <nav class="nav__navigation">
-            <ul class="nav__ul">
-                <li class="nav__loisirs">
-                    <a href="#" role="button" class="navi__li" >Mes loisirs</a>
-                    <ul class="loisirs__ul">
-                        <li class="loisirs__li premier_loisir">
-                            <a href="#" class="loisir__a"><span class="loisir__title" >Lecture</span></a>
-                        </li>
-                        <li class="loisirs__li deuxieme_loisir">
-                            <a href="#" class="loisir__a"><span class="loisir__title" >Gaming</span></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="recettes"><a href="#" role="button" class="nav__li">Recettes</a></li>
-                <li class="histoire"><a href="#" role="button" class="navigation__li" >Nos histoires de café</a></li>
-            </ul>
-        </nav>
-        <div class="nav__logo">
-            <a class="logo__a" href="#" ></a>
-        </div>
-        <div class="nav__bouton">
-            <button  class="contact__button">Contacter maintenant</button>
+        <div class="grid-x">
+            <div class="header__navigation">
+                <input id="toggle" type="checkbox">
+                <label for="toggle" class="hamburger">
+                    <div class="top-bun"></div>
+                    <div class="bottom-bun"></div>
+                </label>
+
+                <div class="nav">
+                    <nav class="nav__navigation">
+                        <div class="nav__wrapper">
+                            <ul class="nav__ul">
+                                <li class="nav__loisirs">
+                                    <a href="#" role="button" class="navi__li" >Mes loisirs</a>
+                                    <ul class="loisirs__ul">
+                                        <li class="loisirs__li premier_loisir">
+                                            <a href="#" class="loisir__a"><span class="loisir__title" >Lecture</span></a>
+                                        </li>
+                                        <li class="loisirs__li deuxieme_loisir">
+                                            <a href="#" class="loisir__a"><span class="loisir__title" >Gaming</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="recettes"><a href="#" role="button" class="nav__li">Recettes</a></li>
+                                <li class="histoire"><a href="#" role="button" class="navigation__li" >Nos histoires de café</a></li>
+                            </ul>
+                            <div class="nav__bouton">
+                                <button  class="contact__button">Contacter maintenant</button>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="nav__logo">
+                    <a class="logo__a" href="#" ></a>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -106,37 +121,37 @@
 
         <div class="step__container">
             <div class="step">
-                <div class="img__container step1 active">
+                <div class="img__container">
                     <img src="./img/img1.jpg" alt="">
                 </div>
                 <div class="step__txt step1 active">
-                    <p class="step__step subheader">Etape 1</p>
+                    <p class="step__step subheader">étape 1</p>
                     <h3 class="step__title title">Langages</h3>
-                    <p class="step__txt">HTML5, CSS3, JavaScript, PHP</p>
+                    <p class="step__p">HTML5, CSS3, JavaScript, PHP</p>
                     <a href="#" class="step__next">Prochaine étape</a>
                 </div>
             </div>
 
             <div class="step">
-                <div class="img__container step2 hide">
+                <div class="img__container">
                     <img src="./img/img2.jpg" alt="">
                 </div>
                 <div class="step__txt step2 hide">
-                    <p class="step__step subheader">Etape 2</p>
+                    <p class="step__step subheader">étape 2</p>
                     <h3 class="step__title title">Outils</h3>
-                    <p class="step__txt">HTML5, CSS3, JavaScript, PHP</p>
+                    <p class="step__p">HTML5, CSS3, JavaScript, PHP</p>
                     <a href="#" class="step__next">Prochaine étape</a>
                 </div>
             </div>
 
             <div class="step">
-                <div class="img__container step3 hide">
+                <div class="img__container">
                     <img src="./img/img3.jpg" alt="">
                 </div>
                 <div class="step__txt step3 hide">
-                    <p class="step__step subheader">Etape 3</p>
+                    <p class="step__step subheader">étape 3</p>
                     <h3 class="step__title title">Langages</h3>
-                    <p class="step__txt">HTML5, CSS3, JavaScript, PHP</p>
+                    <p class="step__p">HTML5, CSS3, JavaScript, PHP</p>
                     <a href="#" class="step__next">Prochaine étape</a>
                 </div>
             </div>
@@ -236,31 +251,33 @@
 
     <footer>
         <section class="footer background__green">
-            <ul class="footer__links ">
-                <li><a href="#">À propos de moi</a></li>
-                <li><a href="#">Contactez-moi</a></li>
-                <li><a href="#">Recyclez vos capsules</a></li>
-                <li class="footer__language">
-                    <span class="active__language"><a href="#">français</a></span>
-                    <span class="inactive__language"><a href="#" title="Nederlands">( Nederlands) </a></span>
-                </li>
-            </ul>
-            <ul class="footer__links legal">
-                <li><a href="#">Politique de confidentialité</a></li>
-                <li><a href="#" >Conditions d'utilisation</a></li>
-                <li><a href="#">Avis relatif aux cookies</a></li>
-            </ul>
-            <ul class="footer__socials">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Youtube</a></li>
-            </ul>
-            <p class="footer__p">
-                Emilie est une marque déposée de Emilie Colleye utilisée sous licence par Emilie Colleye.
-                Pike Place est une marque déposée de The Pike Place Market PDA, utilisée sous licence.
-                Nespresso et Nescafé Dolce Gusto sont des marques déposées de la Société de Produits Nestlé S.A.
-                Toutes les autres marques sont la propriété de leurs propriétaires
-            </p>
+            <div class="footer__footer">
+                <ul class="footer__links ">
+                    <li><a href="#">À propos de moi</a></li>
+                    <li><a href="#">Contactez-moi</a></li>
+                    <li><a href="#">Recyclez vos capsules</a></li>
+                    <li class="footer__language">
+                        <span class="active__language"><a href="#">français</a></span>
+                        <span class="inactive__language"><a href="#" title="Nederlands">( Nederlands) </a></span>
+                    </li>
+                </ul>
+                <ul class="footer__links legal">
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#" >Conditions d'utilisation</a></li>
+                    <li><a href="#">Avis relatif aux cookies</a></li>
+                </ul>
+                <ul class="footer__socials">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Youtube</a></li>
+                </ul>
+                <p class="footer__p">
+                    Emilie est une marque déposée de Emilie Colleye utilisée sous licence par Emilie Colleye.
+                    Pike Place est une marque déposée de The Pike Place Market PDA, utilisée sous licence.
+                    Nespresso et Nescafé Dolce Gusto sont des marques déposées de la Société de Produits Nestlé S.A.
+                    Toutes les autres marques sont la propriété de leurs propriétaires
+                </p>
+            </div>
         </section>
     </footer>
 </body>
