@@ -25,8 +25,8 @@
                     <nav class="nav__navigation">
                         <div class="nav__wrapper">
                             <ul class="nav__ul">
-                                <li class="nav__loisirs">
-                                    <a href="#" role="button" class="navi__li" >Mes loisirs</a>
+                                <li class="nav__li">
+                                    <a href="#" role="button" class="navigation__li" >Mes loisirs</a>
                                     <ul class="loisirs__ul">
                                         <li class="loisirs__li premier_loisir">
                                             <a href="#" class="loisir__a"><span class="loisir__title" >Lecture</span></a>
@@ -36,12 +36,12 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="recettes"><a href="#" role="button" class="nav__li">Recettes</a></li>
-                                <li class="histoire"><a href="#" role="button" class="navigation__li" >Nos histoires de café</a></li>
+                                <li class="nav__li"><a href="#" role="button" class="navigation__li">Recettes</a></li>
+                                <li class="nav__li"><a href="#" role="button" class="navigation__li" >Nos histoires de café</a></li>
+                                <li class="nav__li"><div class="nav__bouton">
+                                    <button  class="contact__button">Contacter maintenant</button>
+                                </div></li>
                             </ul>
-                            <div class="nav__bouton">
-                                <button  class="contact__button">Contacter maintenant</button>
-                            </div>
                         </div>
                     </nav>
                 </div>
@@ -54,7 +54,8 @@
     </header>
 
     <main>
-        <section  class="subheader__section background__green">
+        <div class="banner__container">
+            <section  class="subheader__section background__green">
             <div class="background__image"></div>
             <div class="banner">
                 <p class="subheader__title subheader">Web designer</p>
@@ -64,7 +65,10 @@
                 <img src="#" alt="mon image">
             </div>
             <span class="subheader__min">3 Min</span>
-        </section>
+            </section>
+        </div>
+
+
 
         <section class="about__section background__neutral">
                 <h2 class="subheader__container">
@@ -204,7 +208,7 @@
 
         <section class="formation__section">
                 <div class="formation__title">
-                        <p class="formation__decouvrir subheader">En découvrir plus</p>
+                    <p class="formation__decouvrir subheader">En découvrir plus</p>
                     <h3 class="h3 title">MES FORMATIONS</h3>
                 </div>
 
@@ -212,36 +216,36 @@
                     <div class="formation__card">
                         <a href="#" class="formation__link" target="_parent">
                             <div class="sbx-image-container">
-                                <img  src='' class="formation__image"   alt='Logo de la haute école de la province de Liège' aria-hidden="true"/>
+                                <img  src='./img/hepl_logo.png' class="formation__image"   alt='Logo de la haute école de la province de Liège' aria-hidden="true"/>
                             </div>
                             <div class="formation__description">
-                                <p class="formation__title">Bachelier en Techniques Graphiques</p>
-                                <p class="formation__title">Haute école de la province de Liège</p>
-                                <p class="year">2020-2022</p>
+                                <p class="formation__subtitle">Bachelier en Techniques Graphiques</p>
+                                <p class="formation__subtitle">Haute école de la province de Liège</p>
+                                <p class="formation__year">2020-2022</p>
                             </div>
                         </a>
                     </div>
                     <div class="formation__card">
                         <a href="#" class="formation__link" target="_parent">
                             <div class="sbx-image-container">
-                                <img  src='' class="formation__image"   alt='Logo de la haute école de Liège' aria-hidden="true"/>
+                                <img  src='./img/hel_logo.png' class="formation__image"   alt='Logo de la haute école de Liège' aria-hidden="true"/>
                             </div>
                             <div class="formation__description">
-                                <p class="formation__title">Bachelier en Informatique et Systèmes</p>
-                                <p class="formation__title">Haute école de Liège</p>
-                                <p class="year">2018-2020</p>
+                                <p class="formation__subtitle">Bachelier en Informatique et Systèmes</p>
+                                <p class="formation__subtitle">Haute école de Liège</p>
+                                <p class="formation__year">2018-2020</p>
                             </div>
                         </a>
                     </div>
                     <div class="formation__card">
                         <a href="#" class="formation__link" target="_parent">
                             <div class="sbx-image-container">
-                                <img  src='' class="formation__image"   alt='Logo de l`Athénée Royal de Visé' aria-hidden="true"/>
+                                <img  src='./img/arv_logo.jpg' class="formation__image"   alt='Logo de l`Athénée Royal de Visé' aria-hidden="true"/>
                             </div>
                             <div class="formation__description">
-                                <p class="formation__title">Études secondaires générales</p>
-                                <p class="formation__title">Athénée Royal de Visé </p>
-                                <p class="year">2012-2018</p>
+                                <p class="formation__subtitle">Études secondaires générales</p>
+                                <p class="formation__subtitle">Athénée Royal de Visé </p>
+                                <p class="formation__year">2012-2018</p>
                             </div>
                         </a>
                     </div>
