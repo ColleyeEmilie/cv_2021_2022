@@ -24,12 +24,6 @@
     src: url("/fonts/SoDo-SansBold.woff2") format("woff2");
 }
 
-/*
----------------------------------
-------------FIN FONTS------------
----------------------------------
-*/
-
 
 /*
 ---------------------------------
@@ -502,7 +496,6 @@ ul{
      text-align: center;
      border-radius: 12.5rem;
      display: inline-block;
-
      font-size: 16px;
      line-height: 20px;
      font-weight: 400;
@@ -514,6 +507,71 @@ ul{
 ---------------FORMATION--------------
 ------------------------------------
 */
+.experience__logo img{
+    max-width: 100%;
+}
+
+.experience__subtitle{
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 700;
+    width: 100%;
+    margin-top: 3.125rem;
+    margin-bottom: 0.9375rem;
+    color: #006241;
+    letter-spacing: .1875rem;
+}
+.experience{
+    padding-right: 1.875rem;
+    padding-left: 1.875rem;
+    max-width: 2800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.experience__content{
+    height: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 6.25rem 0;
+    justify-content: center;
+}
+.experience__title{
+    margin-bottom: 1.25rem;
+    color: #1e3932;
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 400;
+    text-align: center;
+}
+.experience__description p{
+    color: #1e3932;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: .02em;
+    margin-right: -0.02rem;
+}
+.button__expro{
+    margin: 1.25rem 0 0;
+    color: #006241;
+    line-height: 1.1875rem;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .025em;
+    padding: 0.9375rem 1.875rem;
+    display: inline-block;
+}
+.experience a{
+
+}
+/*
+------------------------------------
+---------------FORMATION--------------
+------------------------------------
+*/
+
 
 .formation__section{
     background-color: #9B9B9B;
