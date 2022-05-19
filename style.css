@@ -73,7 +73,7 @@ header{
     display: block;
     left: 0;
     z-index: 9;
-    transition: background-color .3s cubic-bezier(.64,.04,.35,1);
+    transition: background-color .4s cubic-bezier(.64,.04,.35,1);
 }
 
 .header__navigation{
@@ -81,11 +81,7 @@ header{
     align-items: center;
     position: relative;
     max-width: 137.5rem;
-    /*margin: 1.125rem auto;*/
-    margin-top: 1.125rem;
-    margin-right: auto;
-    margin-bottom: 1.125rem;
-    margin-left: auto;
+    margin: 1.125rem auto;
     height: 3.125rem;
 }
 
@@ -137,7 +133,7 @@ header{
 }
 
 /**
-  Hamburger
+  Hamburger (top-bun & bottom-bun)
 **/
 .hamburger {
     position: absolute;
@@ -202,13 +198,15 @@ nav a:hover {
     color: #006241;
 }
 
+
+#toggle:checked + .hamburger .bottom-bun {
+    transform: rotate(45deg);
+    background-color: #1e3932;
+    margin-top: -1px;
+}
 #toggle:checked + .hamburger .top-bun {
     transform: rotate(-45deg);
-    margin-top: 25px;
-}
-#toggle:checked + .hamburger .bottom-bun {
-    opacity: 0;
-    transform: rotate(45deg);
+    background-color: #1e3932;
 }
 #toggle:checked + .hamburger + .nav {
     top: 0;
@@ -221,7 +219,7 @@ nav a:hover {
     font-weight: 400;
 }
 .nav__ul{
-    padding-top: 2.5rem;
+    padding-top: 2.5rem ;
     padding-left: 1.875rem;
     padding-right: 1.875rem;
     position: relative;
@@ -245,6 +243,25 @@ nav a:hover {
     margin-right: -0.025rem;
     text-align: left;
 }
+
+.nav__li:first-child{
+    margin-top:0;
+}
+/*
+---------------------------------
+-------------LOISIRS-------------
+---------------------------------
+*/
+.loisirs__li{
+    /*position: absolute;
+    top: 0%; left: 0; right: 0; bottom: 0;*/
+    display: none;
+}
+a.navigation__loisirs:active{
+
+}
+
+
 
 /*
 ---------------------------------
@@ -309,6 +326,12 @@ nav a:hover {
     margin-bottom: 1.5rem;
 }
 
+main .banner__container .image__container{
+    bottom: 15%;
+    position: absolute;
+    z-index: 2;
+    transform: translateY(140px) scale(.8);
+}
 /*
 ---------------------------------
 --------------ABOUT--------------
@@ -351,6 +374,10 @@ nav a:hover {
 ------------INGREDIENTS------------
 -----------------------------------
 */
+
+.ingredients__section{
+    min-height: 100vh;
+}
 
 .ingredients__content{
     padding-top: 3.125rem;
@@ -554,7 +581,7 @@ ul{
  }
  .contact__button{
      color: #fefefe;
-     background-color: #006241;
+     background-color: #1e3932;
      text-align: center;
      border-radius: 12.5rem;
      display: inline-block;
@@ -569,7 +596,7 @@ ul{
 
  button span.like{
      color: #fefefe;
-     background-color: #006241;
+     background-color: #1e3932;
      text-align: center;
      border-radius: 12.5rem;
      display: inline-block;
@@ -579,6 +606,38 @@ ul{
      letter-spacing: .025em;
  }
 
+ .sun-img{
+     display: block;
+     width: auto;
+     height: 100%;
+     position: relative;
+     top: 40px;
+     left: 0;
+     margin: 0 auto;
+     z-index: 5;
+ }
+
+ .cube-img{
+     max-width: 100%;
+     display: block;
+     margin: auto;
+     position: absolute;
+     top: 85%;
+     z-index: 5;
+     width: 45%;
+     left: 0;
+     right: 0;
+ }
+
+ .glass-img{
+     margin: auto;
+     position: absolute;
+     transform: translateY(-95%);
+     width: 75%;
+     z-index:10;
+     left: 0;
+     right: 0;
+ }
 /*
 ---------------------------------------
 ---------------EXPERIENCE--------------
