@@ -56,7 +56,7 @@ body{
 h3, .navigation__li{
     font-size: 38px;
     line-height: 46px;
-    font-family: LanderGrandeRegular,Arial;
+    font-family: LanderGrandeRegular, Arial, serif;
     font-weight: 400;
 }
 img{
@@ -622,7 +622,7 @@ ul{
      display: block;
      margin: auto;
      position: absolute;
-     top: 85%;
+     top: 80%;
      z-index: 5;
      width: 45%;
      left: 0;
@@ -634,7 +634,7 @@ ul{
      position: absolute;
      transform: translateY(-95%);
      width: 75%;
-     z-index:10;
+     z-index:6;
      left: 0;
      right: 0;
  }
@@ -661,9 +661,13 @@ ul{
 .experience{
     padding-right: 1.875rem;
     padding-left: 1.875rem;
+    min-height: 100vh;
     max-width: 2800px;
     margin-left: auto;
     margin-right: auto;
+    position:relative;
+    background-color: white;
+    z-index: 10;
 }
 .experience__content{
     height: 100%;
@@ -679,6 +683,7 @@ ul{
     line-height: 46px;
     font-weight: 400;
     text-align: center;
+    word-break: break-word;
 }
 .experience__description p{
     color: #1e3932;
@@ -687,23 +692,33 @@ ul{
     font-weight: 400;
     letter-spacing: .02em;
     margin-right: -0.02rem;
+    text-align: center;
 }
 .button__expro{
-    margin: 1.25rem 0 0;
+    margin: 1.25rem auto 0;
     color: #006241;
     line-height: 1.1875rem;
-    text-align: center;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: .025em;
-    padding: 0.9375rem 1.875rem;
     display: inline-block;
+    border-bottom: solid 2px #006241;
+}
+
+.experience__informations{
+    padding: 0 22px;
+    margin: 0 7px;
 }
 /*
 --------------------------------------
 ---------------FORMATION--------------
 --------------------------------------
 */
+section.formation__section{
+    position:relative;
+    background-color: #f2f0eb;
+    z-index: 10;
+}
 .formation{
     display: flex;
     flex-direction: column;
@@ -829,4 +844,137 @@ footer{
 .footer__socials li{
     display: inline-block;
     margin-right: 3.125rem;
+}
+
+
+/*
+------------------------------------
+-------------SCREEN 768-------------
+------------------------------------
+*/
+@media all and (min-width: 768px) {
+    .about__section{
+        padding: 80px 40px;
+    }
+    .div__about{
+        margin: 0 60px;
+    }
+    .banner__container .image__container{
+        padding: 100px 0 0;
+    }
+    .ingredients__content{
+        padding: 100px 0;
+    }
+
+    .contact__button{
+        padding: 15px;
+        margin: 60px 150px 0;
+    }
+
+    .contact__content{
+        margin: 0 7px;
+    }
+    .contact__subtitle, .contact__title{
+        margin: 0 0 20px;
+    }
+    .sun-img{
+        top: 40px;
+        width: 63%;
+        transform: translateY(-8%);
+    }
+
+    .cube-img{
+        margin: auto;
+        position: absolute;
+        top: 82%;
+        width: 35%;
+    }
+
+    .glass-img{
+        position: absolute;
+        transform: translateY(-118%);
+        width: 55%;
+    }
+
+    .experience{
+        margin: 0;
+        padding: 0 40px;
+        min-height: 50vh;
+    }
+    .experience__content{
+        display:flex;
+    }
+
+    div.experience__logo{
+        display: inline-block;
+    }
+    .experience__logo img{
+        max-width: 280px;
+    }
+    .experience__informations{
+        padding: 0 0 0 32px;
+    }
+    .experience__subtitle, .experience__description p{
+        margin: 0 0 15px 0;
+    }
+    .experience__subtitle, .experience__description p,.experience__title {
+        text-align: left;
+    }
+    .experience__title{
+        font-size: 38px;
+    }
+
+    .formation{
+        padding: 5rem 0 7.8125rem;
+        flex-direction:row;
+    }
+
+    img.formation__image{
+        min-width: 100%;
+    }
+    .formation__description{
+        /*margin-bottom: 0.9375rem;*/
+        vertical-align: bottom;
+    }
+
+    .footer__links{
+        display: block;
+        min-width: 100%;
+        text-align: center;
+    }
+    .footer__links li{
+        margin-bottom: 0;
+        margin-right: 2.125rem;
+        display: inline;
+    }
+
+    .footer__footer{
+        margin: 0 67px;
+    }
+    ul.legal:not(:last-child) {
+        /*margin-right: 34px;*/
+    }
+    .legal{
+        margin-top: 30px;
+        font-size: 14px;
+    }
+}
+
+
+/*
+------------------------------------
+-------------SCREEN 1024-------------
+------------------------------------
+*/
+@media screen and (min-width: 1024px) {
+
+}
+
+/*
+------------------------------------
+-------------SCREEN 1440-------------
+------------------------------------
+*/
+@media screen and (min-width: 1440px) {
+
 }
