@@ -389,8 +389,8 @@ main .banner__container .image__container{
 .ingredients__image img{
     display: inline-block;
     vertical-align: middle;
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+
 }
 .ingredients__title{
     text-align: center;
@@ -967,7 +967,92 @@ footer{
 ------------------------------------
 */
 @media screen and (min-width: 1024px) {
+    .ingredients__section{
+        display:flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .ingredients__wrapper{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
 
+    .ingredients__img__wrap{
+        position: relative;
+        width: 150%;
+        left: 35%;
+        transform: translateX(-50%);
+        overflow: hidden;
+    }
+
+    .ingredients__content{
+        margin-left: 120px;
+        flex-grow: 1;
+    }
+
+    .ingredients__image img{
+        width: 150%;
+        height: 100%;
+
+        position: relative;
+    }
+    .step__container{
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+    }
+    .step{
+        display: flex;
+        height: 100vh;
+    }
+    .step__txt{
+        padding: 0 150px;
+    }
+
+    .img__container{
+        width: 50%;
+        height: 100vh;
+        justify-content: center;
+    }
+    .img__container img{
+        object-fit: fill;
+        align-items: center;
+
+    }
+    .contact{
+        padding: 0 40px;
+    }
+
+    .contact__div{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .contact__content{
+        position: relative;
+        left: -1.875rem;
+    }
+
+    .experience{
+        padding: 0 40px;
+    }
+    .experience__content{
+        display: flex;
+        padding: 40px 0 100px;
+    }
+    .experience__informations{
+        margin: 40px 8px 0;
+    }
+    .experience__logo{
+        padding-left: 32px;
+    }
+    .formation{
+        padding: 80px 40px 100px;
+    }
+    .footer__p{
+        margin: 18px 18px 0;
+    }
 }
 
 /*
