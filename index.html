@@ -38,22 +38,14 @@
                                 </li>
                                 <li class="nav__li"><a href="#" role="button" class="navigation__li">Recettes</a></li>
                                 <li class="nav__li"><a href="#" role="button" class="navigation__li" >Nos histoires de café</a></li>
-                                <div class="nav__logo">
-                                    <a class="logo__a" href="#" >aaaaaaa</a>
-                                </div>
-                                <ul class="search">
-                                    <li class="search__li nav__li">
-                                        <span></span>
-                                        <a href="#" class="search__a" title="Rechercher">Rechercher</a>
-                                    </li>
-                                    <li class="search-label show-for-small-only hide-for-medium js-search ">
-                                        <span></span>
-                                    </li>
-                                </ul>
-                                <li class="nav__li"><div class="nav__bouton">
-                                    <button  class="contact__button">Contacter maintenant</button>
-                                </div></li>
                             </ul>
+                            <div class="nav__logo">
+                                <a class="logo__a" href="#" ><img src="./img/svg/logo.svg" alt="logo SVG" /></a>
+                                <a href="#" class="search__a" title="Rechercher">Rechercher</a>
+                            </div>
+                            <div class="nav__bouton"><button  class="contact__button">Contacter maintenant</button></div>
+                            <div class="nav__langue svg"><img src="./img/svg/langue_blanc.svg" alt="langue SVG" /></div>
+                            <div class="nav__contrast svg"><img src="./img/svg/langue_blanc.svg" alt="contrast SVG" /></div>
                         </div>
                     </nav>
                 </div>
@@ -65,9 +57,9 @@
         <div class="banner__container">
             <section  class="subheader__section background__green">
             <div class="background__image"></div>
-            <div class="banner">
-                <p class="subheader__title subheader">Web designer</p>
-                <h1 class="subheader__name title">Emilie Colleye</h1>
+            <div class="banner ">
+                <p class="subheader__title subheader reveal-1">Web designer</p>
+                <h1 class="subheader__name title reveal-2">Emilie Colleye</h1>
             </div>
             <div class="image__container">
                 <img src="./img/tasse_header.png" alt="tasse">
@@ -79,11 +71,11 @@
 
 
         <section class="about__section background__neutral">
-            <div class="div__about">
+            <div class="div__about ">
                 <h2 class="subheader__container">
-                    <p class="about__title subheader">EN SAVOIR PLUS SUR CETTE PERSONNE</p>
+                    <p class="about__title subheader reveal-1">EN SAVOIR PLUS SUR CETTE PERSONNE</p>
                 </h2>
-                <p class="about__content">Je m'appelle Emilie Colleye, actuellement étudiante à la HEPL en Techniques graphiques. </p>
+                <p class="about__content reveal-2">Je m'appelle Emilie Colleye, actuellement étudiante à la HEPL en Techniques graphiques. </p>
             </div>
         </section>
 
@@ -228,7 +220,7 @@
                 </div>
 
                 <div class="formation">
-                    <div class="formation__card">
+                    <div class="formation__card reveal-1">
                         <a href="#" class="formation__link" target="_parent">
                             <div class="sbx-image-container">
                                 <img  src='./img/hepl_logo.png' class="formation__image"   alt='Logo de la haute école de la province de Liège' aria-hidden="true"/>
@@ -240,7 +232,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="formation__card">
+                    <div class="formation__card reveal-1">
                         <a href="#" class="formation__link" target="_parent">
                             <div class="sbx-image-container">
                                 <img  src='./img/hel_logo.png' class="formation__image"   alt='Logo de la haute école de Liège' aria-hidden="true"/>
@@ -252,7 +244,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="formation__card">
+                    <div class="formation__card reveal-1">
                         <a href="#" class="formation__link" target="_parent">
                             <div class="sbx-image-container">
                                 <img  src='./img/arv_logo.jpg' class="formation__image"   alt='Logo de l`Athénée Royal de Visé' aria-hidden="true"/>
@@ -266,9 +258,13 @@
                     </div>
                 </div>
         </section>
+
     </main>
 
     <footer>
+        <div class="footer__logo">
+            <img class="footer__logo__img" src="./img/svg/logo.svg" alt="logo SVG" />
+        </div>
         <section class="footer background__green">
             <div class="footer__footer">
                 <ul class="footer__links ">
@@ -299,5 +295,6 @@
             </div>
         </section>
     </footer>
+    <script src="./src/main.js"></script>
 </body>
 </html>
