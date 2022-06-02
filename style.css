@@ -93,6 +93,20 @@ header{
     height: 3.125rem;
 }
 
+    .nav__search img{
+        margin-left: 30px;
+        max-width: 40%;
+    }
+    .nav__logo__a{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        z-index:10;
+    }
+    .nav__logo__a img{
+        max-width: 70%;
+    }
     .banner__container{
         overflow: hidden;
         width: 100%;
@@ -127,7 +141,7 @@ header{
     ----------------------------------
     */
 
-    #toggle {
+    #toggle, .search__a, .logo__a{
         display: none;
     }
 
@@ -229,7 +243,7 @@ header{
         align-items: flex-start;
         justify-content: flex-start;
     }
-    .contact__button{
+    nav .contact__button{
         width: auto;
         height: auto;
         background-image: none;
@@ -241,6 +255,8 @@ header{
         letter-spacing: .025em;
         margin-right: -0.025rem;
         text-align: left;
+        background-color: #006241;
+        font-family: SoDoSansRegular, sans-serif;
     }
 
     .nav__li:first-child{
@@ -254,6 +270,10 @@ header{
     .loisirs__li{
         display: none;
     }
+}
+
+.banner{
+    padding-top:30px;
 }
 /*
 ---------------------------------
@@ -273,11 +293,8 @@ header{
 
 .subheader__section{
     max-width: 100%;
-    z-index: auto;
     display: block;
     position: relative;
-    overflow: visible;
-    box-sizing: border-box;
     margin-top:86px;
     width: 100%;
     height: 100vh;
@@ -300,7 +317,10 @@ header{
     line-height: 58px;
     font-weight: 400;
 }
-
+.subheader__min::before{
+    content: url("./img/svg/time_white.svg");
+    margin-right: 10px;
+}
 .subheader__min{
     position: absolute;
     bottom: 1.25rem;
@@ -1091,12 +1111,13 @@ footer{
 ------------------------------------
 */
 @media screen and (min-width: 1440px) {
-    .hamburger, #toggle {
+    .hamburger, #toggle,.nav__search, .nav__logo__a {
         display: none;
     }
 
     .grid-x {
         margin: 0 auto;
+        white-space: nowrap;
     }
 
     .nav__wrapper {
@@ -1124,8 +1145,15 @@ footer{
         color: white;
         font-family: SoDoSansRegular, sans-serif;
         font-size: 14px;
+        border-style: solid;
+        border-color: #fff;
+        background: transparent;
+
     }
 
+    .banner{
+        padding-top:100px;
+    }
     .svg {
         margin: 17px 20px 0 0;
     }
@@ -1149,7 +1177,7 @@ footer{
 
     .search__a::before {
         content: url("./img/svg/search_white.svg");
-        vertical-align: middle;
+        margin-right: 20px;
     }
 
     .active__language::before {
@@ -1179,10 +1207,14 @@ footer{
         margin: 0 110px;
     }
 
-    .ingredients__title, .step__step, .step__p, .experience__subtitle, .experience__description, .formation__decouvrir, .formation__year, .footer__links.legal {
+    .ingredients__title, .step__step, .step__p, .experience__subtitle, .experience__description, .formation__decouvrir, .formation__year, .footer__links.legal, .subheader__title {
         font-size: 16px;
     }
 
+    .subheader__name{
+        padding-top: 20px;
+        font-size: 82px;
+    }
     .step__title, .experience__title, .h3 .title {
         font-size: 48px;
     }
